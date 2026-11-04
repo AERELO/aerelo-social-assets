@@ -1,0 +1,49 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:'Jost';font-weight:300;src:url('file:///home/claude/work/fonts/node_modules/@fontsource/jost/files/jost-latin-300-normal.woff2')}
+@font-face{font-family:'Outfit';font-weight:300;src:url('file:///home/claude/work/fonts/node_modules/@fontsource/outfit/files/outfit-latin-300-normal.woff2')}
+@font-face{font-family:'Outfit';font-weight:400;src:url('file:///home/claude/work/fonts/node_modules/@fontsource/outfit/files/outfit-latin-400-normal.woff2')}
+body{margin:0;background:#121515}
+#c{position:relative;width:1080px;height:1920px;background:#121515;overflow:hidden;color:#F4F9F9;font-family:'Outfit',sans-serif}
+.a{position:absolute;left:0;width:1080px;text-align:center;white-space:nowrap}
+.h{font-family:'Jost',sans-serif;font-weight:300;letter-spacing:-.01em;line-height:1.08}
+</style></head><body><div id="c"></div><script>
+const C=document.getElementById('c');const items=[];
+const cl=x=>Math.max(0,Math.min(1,x)),eo=p=>1-Math.pow(1-p,3),eio=p=>p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2,eb=p=>{const c=1.5;return 1+(c+1)*Math.pow(p-1,3)+c*Math.pow(p-1,2)};
+function mk(html,css,cls){const d=document.createElement('div');d.className=cls||'a';d.style.cssText=css;d.innerHTML=html;C.appendChild(d);return d}
+function reg(el,t0,dur,dx,dy,out,ease){items.push({el,t0,dur,dx,dy,out,ease:ease||eo})}
+// logo: viewBox 200 275 700 520 -> placed 840 wide
+const S=840/700;
+C.insertAdjacentHTML('beforeend',`<svg id="lg" style="position:absolute;left:120px;top:330px" width="840" height="${520*S}" viewBox="200 275 700 520">
+<ellipse id="el" cx="539.35" cy="539.6" rx="323.25" ry="76.26" transform="rotate(-16.03 539.35 539.6)" fill="none" stroke="#E6EBEB" stroke-opacity=".45" stroke-width="4.5" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/>
+<path id="ar" d="M502.6 330.1 A212.6 212.6 0 1 1 328.1 517.3" fill="none" stroke="#E6EBEB" stroke-width="5.5" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1" stroke-linecap="round"/>
+<polygon id="nd" points="537.9,297 541.7,297 546.9,782 532.6,782" fill="#E6EBEB" style="transform-box:fill-box;transform-origin:50% 0%;transform:scaleY(0)"/>
+<g id="dt"><circle id="hl" r="25" fill="#F5C13A" fill-opacity=".25"/><circle r="12.5" fill="#F5C13A"/></g></svg>`);
+const el=document.getElementById('el'),ar=document.getElementById('ar'),nd=document.getElementById('nd'),dt=document.getElementById('dt'),hl=document.getElementById('hl');
+const wm=mk('Aerelo','top:1000px;font-size:40px;font-weight:300;letter-spacing:.42em;text-transform:uppercase;padding-left:.42em',"a");wm.style.fontFamily='Outfit';reg(wm,5.2,.9,0,20,null);
+const t1=mk('Above','top:1130px;font-size:132px;',"a h"),t2=mk('the','top:1130px;font-size:132px;',"a h"),t3=mk('ordinary.','top:1130px;font-size:132px;',"a h");
+t1.style.textAlign=t2.style.textAlign=t3.style.textAlign='center';
+// place words on one line via spans instead
+t1.remove();t2.remove();t3.remove();
+const tag=mk('<span id="w1" style="display:inline-block">Above</span> <span id="w2" style="display:inline-block">the</span> <span id="w3" style="display:inline-block;color:#F5C13A">ordinary.</span>','top:1130px;font-size:102px;',"a h");
+const sub=mk('Websites and brands<br>that help businesses sell.','top:1130px;font-size:76px;line-height:1.2',"a h");reg(sub,10.2,.8,0,40,null,eb);
+const sm=mk('Sites, stores, logos and brand kits','top:1400px;font-size:34px;color:#A9B2B4;font-weight:300',"a");reg(sm,11.2,.7,0,20,null);
+const cta=mk('Message us to begin','top:1470px;left:240px;width:600px;height:96px;border-radius:48px;background:#F5C13A;color:#121515;font-size:36px;font-weight:400;line-height:96px;text-align:center',"a");cta.style.left='240px';reg(cta,12.4,.7,0,40,null,eb);
+function setT(t){
+ items.forEach(o=>{const p=cl((t-o.t0)/o.dur),e=o.ease(p);let op=cl(e);if(o.out!=null)op*=1-cl((t-o.out)/.4);o.el.style.opacity=op;o.el.style.transform=`translate(${o.dx*(1-e)}px,${o.dy*(1-e)}px)`});
+ el.setAttribute('stroke-dashoffset',1-eio(cl((t-.3)/2.0)));
+ ar.setAttribute('stroke-dashoffset',1-eio(cl((t-1.6)/2.0)));
+ nd.style.transform=`scaleY(${eo(cl((t-2.8)/1.0))})`;
+ // dot orbit
+ const th=2*Math.PI*eio(cl((t-4.2)/6.0));
+ const rx=323.25,ry=76.26,x0=rx*Math.cos(th),y0=ry*Math.sin(th),ph=-16.03*Math.PI/180;
+ const x=539.35+x0*Math.cos(ph)-y0*Math.sin(ph),y=539.6+x0*Math.sin(ph)+y0*Math.cos(ph);
+ dt.setAttribute('transform',`translate(${x},${y})`);
+ const ap=eb(cl((t-3.6)/.7));dt.style.opacity=cl(ap);hl.setAttribute('r',25*(1+0.25*Math.sin(t*5)*cl((t-4.3))));
+ // tagline words
+ [['w1',7.0,-140,0],['w2',7.35,0,70],['w3',7.7,140,0]].forEach(([id,t0,dx,dy])=>{const e=eb(cl((t-t0)/.7));const w=document.getElementById(id);w.style.opacity=cl(e);w.style.transform=`translate(${dx*(1-e)}px,${dy*(1-e)}px)`});
+ tag.style.opacity=1-cl((t-9.7)/.4);
+ // logo slight rise at end
+ wm.style.top=(1000-60*eio(cl((t-9.8)/1.2)))+'px';document.getElementById('lg').style.transform=`translateY(${-60*eio(cl((t-9.8)/1.2))}px)`;
+}
+setT(0);
+</script></body></html>
