@@ -1,0 +1,51 @@
+{
+  "slug": "how-to-ask-for-a-review",
+  "topic": "Educational: how to ask for a review",
+  "style": "spec",
+  "format": "portrait",
+  "brand": {
+    "name": "AERELO",
+    "theme": "night"
+  },
+  "image_defaults": {
+    "model": "gpt-image-2.6-sunburst",
+    "quality": "high",
+    "size": "1024x1536"
+  },
+  "assets": [],
+  "slides": [
+    {
+      "layout": "cover",
+      "label": "Reviews",
+      "headline": "How to ask\nfor a review.",
+      "headline_size": 118
+    },
+    {
+      "layout": "content",
+      "title": "Ask right after the job.",
+      "lead": "The work is fresh, so it is easiest to say yes."
+    },
+    {
+      "layout": "content",
+      "title": "Send the direct link.",
+      "lead": "One tap to the review page. No searching, no extra steps."
+    },
+    {
+      "layout": "content",
+      "title": "Say what to mention.",
+      "lead": "Ask them to describe what you did and how it went."
+    },
+    {
+      "layout": "content",
+      "title": "Reply to every review.",
+      "lead": "A short thank you shows the next customer you are listening."
+    },
+    {
+      "layout": "close",
+      "headline": "Who will you ask first?",
+      "cta": "Message us to begin"
+    }
+  ],
+  "caption": "How to ask for a review.\n\nAsk right after the job, send the direct link, say what to mention, and reply to every review.\n\nMessage us to begin.\n\n#customerreviews #reviews #smallbusiness #businesstips #aerelo",
+  "hashtags": "#customerreviews #reviews #smallbusiness #businesstips #aerelo"
+}
