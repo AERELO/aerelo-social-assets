@@ -1,0 +1,62 @@
+{
+  "slug": "gather-these-first",
+  "topic": "What we need from you before a build",
+  "format": "portrait",
+  "brand": {
+    "name": "AERELO",
+    "theme": "night"
+  },
+  "image_defaults": {
+    "model": "gpt-image-2.6-sunburst",
+    "quality": "high",
+    "size": "1024x1536",
+    "prompt_suffix": "Visual style: calm, precise, premium, quiet confidence. A matte near-black ground (#121515) with fine film grain, lit by one soft warm brass-toned light source. Palette: near-black, mist white (#F4F9F9), deep ink-blue (#0C2027), warm brass tones and at most ONE small gold (#F5C13A) accent. Large areas of deliberate empty negative space so text can be placed on top later. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, stock-photo people, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image."
+  },
+  "assets": [
+    {
+      "id": "scene",
+      "prompt": "A plain matte black folder with a blank tab, and three loose blank cream cards fanned beside it, on a dark desk, warm brass light from the upper left, one small brass paperclip. Everything sits in the lower half of the frame; the upper 45% is empty ground. Shot straight from above. No printed or written text anywhere.",
+      "size": "1024x1536"
+    }
+  ],
+  "slides": [
+    {
+      "layout": "cover",
+      "label": "Before we build",
+      "headline": "Gather these\nfirst.",
+      "headline_size": 118,
+      "artwork": {
+        "asset": "scene",
+        "mode": "panel",
+        "focus": "50% 90%"
+      }
+    },
+    {
+      "layout": "content",
+      "title": "Your logo files.",
+      "lead": "Send what you have. Any version helps."
+    },
+    {
+      "layout": "content",
+      "title": "Your services.",
+      "lead": "A plain list of what you offer and who it is for."
+    },
+    {
+      "layout": "content",
+      "title": "Real photos.",
+      "lead": "Your work, your space, your team."
+    },
+    {
+      "layout": "content",
+      "title": "Contact details.",
+      "lead": "Hours, address, phone and how you want to be reached."
+    },
+    {
+      "layout": "close",
+      "headline": "Ready to send yours?",
+      "cta": "Message us to begin"
+    }
+  ],
+  "caption": "Gather these first.\n\nBefore a build: your logo files, a plain list of your services, real photos and your contact details.\n\nMessage us to begin.\n\n#websitedesign #smallbusiness #brandidentity #webdesign #aerelo",
+  "hashtags": "#websitedesign #smallbusiness #brandidentity #webdesign #aerelo"
+}

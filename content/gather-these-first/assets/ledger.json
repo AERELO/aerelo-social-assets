@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "assets": {
+    "scene": {
+      "current": {
+        "file": "assets\\originals\\scene.png",
+        "cache_key": "f5d7087c5283a864ad04cac1",
+        "file_sha256": "f62240f4f097e3236a60dd3c308fbafb8ecb4890ffbb172be2eb2adfa1d5ec98"
+      },
+      "pending": null,
+      "history": [
+        {
+          "status": "unknown",
+          "at": "2026-11-05T18:57:57+00:00",
+          "asset_id": "scene",
+          "error": "Could not reach the API (network). The request may or may not have been received; not retried."
+        },
+        {
+          "status": "completed",
+          "started_at": "2026-11-05T19:26:58+00:00",
+          "finished_at": "2026-11-05T19:27:37+00:00",
+          "model": "gpt-image-2.6-sunburst",
+          "quality": "high",
+          "size": "1024x1536",
+          "complexity": null,
+          "output_format": "png",
+          "prompt": "A plain matte black folder with a blank tab, and three loose blank cream cards fanned beside it, on a dark desk, warm brass light from the upper left, one small brass paperclip. Everything sits in the lower half of the frame; the upper 45% is empty ground. Shot straight from above. No printed or written text anywhere.\n\nVisual style: calm, precise, premium, quiet confidence. A matte near-black ground (#121515) with fine film grain, lit by one soft warm brass-toned light source. Palette: near-black, mist white (#F4F9F9), deep ink-blue (#0C2027), warm brass tones and at most ONE small gold (#F5C13A) accent. Large areas of deliberate empty negative space so text can be placed on top later. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, stock-photo people, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image.",
+          "prompt_sha256": "d20690397ba96d86fb6b2b6cbe9620f753565c5fa1af5ac442df7b7da48e9a25",
+          "cache_key": "f5d7087c5283a864ad04cac1",
+          "request_id": "req_65e170a2dab34e0a94d37decc5c6b639",
+          "usage": {
+            "input_tokens": 235,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 235
+            },
+            "output_tokens": 1372,
+            "total_tokens": 1607,
+            "output_tokens_details": {
+              "image_tokens": 1372,
+              "text_tokens": 0
+            }
+          },
+          "cost_estimate": {
+            "usd": 0.0423,
+            "basis": "ESTIMATE: reported token usage x list prices in imagegen.PRICING_PER_M; not an invoice"
+          },
+          "file": "assets\\originals\\scene.png",
+          "file_sha256": "f62240f4f097e3236a60dd3c308fbafb8ecb4890ffbb172be2eb2adfa1d5ec98",
+          "image_size": [
+            1024,
+            1536
+          ],
+          "asset_id": "scene"
+        }
+      ]
+    }
+  }
+}
