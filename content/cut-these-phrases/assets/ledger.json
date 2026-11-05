@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "assets": {
+    "scene": {
+      "current": {
+        "file": "assets\\originals\\scene.png",
+        "cache_key": "a1185bdf20b33ea2956d189f",
+        "file_sha256": "b5cc3070aa0d79f77630160c27950b62a3e5f53a5ef8f1f2a2692e90ccb272aa"
+      },
+      "pending": null,
+      "history": [
+        {
+          "status": "completed",
+          "started_at": "2026-11-05T19:28:26+00:00",
+          "finished_at": "2026-11-05T19:29:01+00:00",
+          "model": "gpt-image-2.6-sunburst",
+          "quality": "high",
+          "size": "1024x1536",
+          "complexity": null,
+          "output_format": "png",
+          "prompt": "A pair of small brass scissors lying beside a blank strip of paper cut cleanly in two, on a dark matte desk, warm brass light from the upper left. Everything sits in the lower half of the frame; the upper 45% is empty ground. Shot straight from above. No printed or written text anywhere.\n\nVisual style: calm, precise, premium, quiet confidence. A matte near-black ground (#121515) with fine film grain, lit by one soft warm brass-toned light source. Palette: near-black, mist white (#F4F9F9), deep ink-blue (#0C2027), warm brass tones and at most ONE small gold (#F5C13A) accent. Large areas of deliberate empty negative space so text can be placed on top later. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, stock-photo people, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image.",
+          "prompt_sha256": "c257551a711e303aacd2e3931f091adac008634b103a7ffe48f82afffaec365f",
+          "cache_key": "a1185bdf20b33ea2956d189f",
+          "request_id": "req_2ea198111eb94fb4b13ede248531fa07",
+          "usage": {
+            "input_tokens": 228,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 228
+            },
+            "output_tokens": 1372,
+            "total_tokens": 1600,
+            "output_tokens_details": {
+              "image_tokens": 1372,
+              "text_tokens": 0
+            }
+          },
+          "cost_estimate": {
+            "usd": 0.0423,
+            "basis": "ESTIMATE: reported token usage x list prices in imagegen.PRICING_PER_M; not an invoice"
+          },
+          "file": "assets\\originals\\scene.png",
+          "file_sha256": "b5cc3070aa0d79f77630160c27950b62a3e5f53a5ef8f1f2a2692e90ccb272aa",
+          "image_size": [
+            1024,
+            1536
+          ],
+          "asset_id": "scene"
+        }
+      ]
+    }
+  }
+}

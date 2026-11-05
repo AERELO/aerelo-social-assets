@@ -1,0 +1,62 @@
+{
+  "slug": "cut-these-phrases",
+  "topic": "Four homepage phrases to cut",
+  "format": "portrait",
+  "brand": {
+    "name": "AERELO",
+    "theme": "night"
+  },
+  "image_defaults": {
+    "model": "gpt-image-2.6-sunburst",
+    "quality": "high",
+    "size": "1024x1536",
+    "prompt_suffix": "Visual style: calm, precise, premium, quiet confidence. A matte near-black ground (#121515) with fine film grain, lit by one soft warm brass-toned light source. Palette: near-black, mist white (#F4F9F9), deep ink-blue (#0C2027), warm brass tones and at most ONE small gold (#F5C13A) accent. Large areas of deliberate empty negative space so text can be placed on top later. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, stock-photo people, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image."
+  },
+  "assets": [
+    {
+      "id": "scene",
+      "prompt": "A pair of small brass scissors lying beside a blank strip of paper cut cleanly in two, on a dark matte desk, warm brass light from the upper left. Everything sits in the lower half of the frame; the upper 45% is empty ground. Shot straight from above. No printed or written text anywhere.",
+      "size": "1024x1536"
+    }
+  ],
+  "slides": [
+    {
+      "layout": "cover",
+      "label": "Copywriting",
+      "headline": "Four phrases\nto cut.",
+      "headline_size": 118,
+      "artwork": {
+        "asset": "scene",
+        "mode": "panel",
+        "focus": "50% 90%"
+      }
+    },
+    {
+      "layout": "content",
+      "title": "“Welcome to our website.”",
+      "lead": "Visitors know where they are. Say what you do instead."
+    },
+    {
+      "layout": "content",
+      "title": "“We are passionate…”",
+      "lead": "Show it with specifics: what you do, for whom, and how."
+    },
+    {
+      "layout": "content",
+      "title": "“Solutions.”",
+      "lead": "Name the actual thing you sell."
+    },
+    {
+      "layout": "content",
+      "title": "“Best in class.”",
+      "lead": "Claims need proof. Use a real example instead."
+    },
+    {
+      "layout": "close",
+      "headline": "Which one is on your homepage?",
+      "cta": "Message us to begin"
+    }
+  ],
+  "caption": "Four phrases to cut from your homepage.\n\n“Welcome to our website.” “We are passionate…” “Solutions.” “Best in class.”\n\nSay what you do, plainly. Message us to begin.\n\n#copywriting #websitecopy #homepage #smallbusiness #aerelo",
+  "hashtags": "#copywriting #websitecopy #homepage #smallbusiness #aerelo"
+}
