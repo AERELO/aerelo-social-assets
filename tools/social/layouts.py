@@ -193,8 +193,7 @@ def build_slide(s: dict, ctx: dict) -> str:
     elif L == "content":
         label = s.get("label") or f'{ctx["num"]} / {ctx["n_content"]:02d}'
         body = (ring_svg(i, n, t, W, H) + topbar(t, label, i, n)
-                + f'<div style="position:relative;margin-top:110px;{mono(t["num"], 30)}">{ctx["num"]}</div>'
-                  f'<h2 style="position:relative;margin:24px 0 0;font-family:Jost;font-weight:300;font-size:{s.get("title_size", 118)}px;'
+                + f'<h2 style="position:relative;margin:170px 0 0;font-family:Jost;font-weight:300;font-size:{s.get("title_size", 118)}px;'
                   f'line-height:1.04;letter-spacing:-.01em">{esc(s["title"])}</h2>'
                   f'<div style="position:relative;margin-top:56px;width:860px;font-size:44px;line-height:1.35;{sub_css}">{esc(s["lead"])}</div>'
                 + spacer + ft(""))
@@ -206,7 +205,7 @@ def build_slide(s: dict, ctx: dict) -> str:
                 + (f'<div style="position:relative;margin-top:32px;{mono(t["dim"], 22)}">{esc(s["source"])}</div>' if s.get("source") else "")
                 + spacer + ft(""))
     elif L == "close":
-        body = (ring_svg(i, n, t, W, H) + topbar(t, s.get("label", "Next"), i, n)
+        body = (ring_svg(i, n, t, W, H) + topbar(t, s.get("label", ""), i, n)
                 + f'<h2 style="position:relative;margin:110px 0 0;font-family:Jost;font-weight:300;font-size:{s.get("headline_size", 104)}px;'
                   f'line-height:1.06;letter-spacing:-.01em">{esc(s["headline"])}</h2>'
                 + (f'<div style="position:relative;margin-top:36px;width:820px;font-size:38px;line-height:1.35;{sub_css}">{esc(s["sub"])}</div>'

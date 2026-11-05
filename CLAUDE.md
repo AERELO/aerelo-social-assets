@@ -48,3 +48,5 @@ Generation needs to reach `api.openai.com`. The claude.ai cloud workspace blocks
 
 ### Verify the tooling after changes
 `python3 -m unittest discover -s tools/social/tests -v` (offline; no key, no spend).
+
+- Post rules (hand to every session, check before delivering): `brand/post-rules.md`.
