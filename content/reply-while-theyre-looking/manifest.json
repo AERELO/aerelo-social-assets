@@ -1,0 +1,26 @@
+{
+  "slug": "reply-while-theyre-looking",
+  "topic": "Reply to enquiries the same day",
+  "format": "portrait",
+  "brand": {
+    "name": "AERELO",
+    "theme": "night"
+  },
+  "image_defaults": {
+    "model": "gpt-image-2.6-sunburst",
+    "quality": "high",
+    "size": "1024x1536"
+  },
+  "assets": [],
+  "slides": [
+    {
+      "layout": "single",
+      "label": "Follow-up",
+      "headline": "Reply while\nthey're still\nlooking.",
+      "headline_size": 118,
+      "sub": "Answering the same day shows you are open for business. Put a reminder on every enquiry."
+    }
+  ],
+  "caption": "Reply while they're still looking.\n\nAnswering the same day shows you are open for business. Put a reminder on every enquiry.\n\nMessage us to begin.\n\n#customerservice #leadfollowup #smallbusiness #businesstips #aerelo",
+  "hashtags": "#customerservice #leadfollowup #smallbusiness #businesstips #aerelo"
+}
