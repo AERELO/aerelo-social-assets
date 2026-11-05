@@ -1,0 +1,62 @@
+{
+  "slug": "google-profile-basics",
+  "topic": "Get found locally: 4 things on your Google Business Profile",
+  "format": "portrait",
+  "brand": {
+    "name": "AERELO",
+    "theme": "paper"
+  },
+  "image_defaults": {
+    "model": "gpt-image-2.6-sunburst",
+    "quality": "high",
+    "size": "1024x1536",
+    "prompt_suffix": "Visual style: calm, precise, premium, quiet confidence. A matte warm paper ground (#F7F5F0) with fine paper-fibre grain, one soft natural light source and a soft shadow, no gloss. Palette: warm paper, ink (#0C2027), slate, and at most ONE small gold (#F5C13A) accent, with at most a touch of muted teal. Large areas of deliberate empty negative space so text can be placed on top later. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, stock-photo people, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image."
+  },
+  "assets": [
+    {
+      "id": "scene",
+      "prompt": "A folded blank paper map with soft grey line shapes only and no labels, and a single small brass map pin lying on it, on a warm paper surface with a soft shadow. Everything sits in the lower half of the frame; the upper 45% is empty ground. Shot straight from above. No printed or written text anywhere.",
+      "size": "1024x1536"
+    }
+  ],
+  "slides": [
+    {
+      "layout": "cover",
+      "label": "Google profile",
+      "headline": "Get found\nnear you.",
+      "headline_size": 118,
+      "artwork": {
+        "asset": "scene",
+        "mode": "panel",
+        "focus": "50% 90%"
+      }
+    },
+    {
+      "layout": "content",
+      "title": "Pick the right category.",
+      "lead": "It tells Google what you are. Choose the one closest to your main service."
+    },
+    {
+      "layout": "content",
+      "title": "Keep hours accurate.",
+      "lead": "Wrong hours send customers away. Update them for holidays too."
+    },
+    {
+      "layout": "content",
+      "title": "Add real photos.",
+      "lead": "Your shopfront, your work, your team. Not stock."
+    },
+    {
+      "layout": "content",
+      "title": "Reply to reviews.",
+      "lead": "Short, polite, human. Every reply shows you are open for business."
+    },
+    {
+      "layout": "close",
+      "headline": "Is your profile complete?",
+      "cta": "Message us to begin"
+    }
+  ],
+  "caption": "Get found near you.\n\nFour things to check on your Google Business Profile: the right category, accurate hours, real photos and replies to reviews.\n\nMessage us to begin.\n\n#googlebusinessprofile #localseo #smallbusiness #getfound #aerelo",
+  "hashtags": "#googlebusinessprofile #localseo #smallbusiness #getfound #aerelo"
+}

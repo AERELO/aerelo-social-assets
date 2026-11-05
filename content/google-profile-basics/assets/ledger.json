@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "assets": {
+    "scene": {
+      "current": {
+        "file": "assets\\originals\\scene.png",
+        "cache_key": "798e661972ed5018a2bbe9bc",
+        "file_sha256": "24365a2558d41d6fe78e208794bd68e3885acbe7bb1ea513b12ded77f3e63abe"
+      },
+      "pending": null,
+      "history": [
+        {
+          "status": "unknown",
+          "at": "2026-11-05T18:56:10+00:00",
+          "asset_id": "scene",
+          "error": "Could not reach the API (network). The request may or may not have been received; not retried."
+        },
+        {
+          "status": "unknown",
+          "at": "2026-11-05T19:15:06+00:00",
+          "asset_id": "scene",
+          "error": "Could not reach the API (network). The request may or may not have been received; not retried."
+        },
+        {
+          "status": "completed",
+          "started_at": "2026-11-05T19:26:14+00:00",
+          "finished_at": "2026-11-05T19:26:53+00:00",
+          "model": "gpt-image-2.6-sunburst",
+          "quality": "high",
+          "size": "1024x1536",
+          "complexity": null,
+          "output_format": "png",
+          "prompt": "A folded blank paper map with soft grey line shapes only and no labels, and a single small brass map pin lying on it, on a warm paper surface with a soft shadow. Everything sits in the lower half of the frame; the upper 45% is empty ground. Shot straight from above. No printed or written text anywhere.\n\nVisual style: calm, precise, premium, quiet confidence. A matte warm paper ground (#F7F5F0) with fine paper-fibre grain, one soft natural light source and a soft shadow, no gloss. Palette: warm paper, ink (#0C2027), slate, and at most ONE small gold (#F5C13A) accent, with at most a touch of muted teal. Large areas of deliberate empty negative space so text can be placed on top later. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, stock-photo people, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image.",
+          "prompt_sha256": "f8f4cf2fe7e6aa0de4a96816dbc395dbca7de4def21dcfbdd1367629ceb49be5",
+          "cache_key": "798e661972ed5018a2bbe9bc",
+          "request_id": "req_b2a085f79456448dbdddc397309015e3",
+          "usage": {
+            "input_tokens": 235,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 235
+            },
+            "output_tokens": 1372,
+            "total_tokens": 1607,
+            "output_tokens_details": {
+              "image_tokens": 1372,
+              "text_tokens": 0
+            }
+          },
+          "cost_estimate": {
+            "usd": 0.0423,
+            "basis": "ESTIMATE: reported token usage x list prices in imagegen.PRICING_PER_M; not an invoice"
+          },
+          "file": "assets\\originals\\scene.png",
+          "file_sha256": "24365a2558d41d6fe78e208794bd68e3885acbe7bb1ea513b12ded77f3e63abe",
+          "image_size": [
+            1024,
+            1536
+          ],
+          "asset_id": "scene"
+        }
+      ]
+    }
+  }
+}
