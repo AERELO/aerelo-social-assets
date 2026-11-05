@@ -1,0 +1,38 @@
+{
+  "slug": "real-photos-beat-stock",
+  "topic": "Real photos beat stock photos",
+  "format": "portrait",
+  "brand": {
+    "name": "AERELO",
+    "theme": "night"
+  },
+  "image_defaults": {
+    "model": "gpt-image-2.6-sunburst",
+    "quality": "high",
+    "size": "1024x1536",
+    "prompt_suffix": "Visual style: calm, precise, premium, quiet confidence. A matte deep slate-ink ground (#181C1C to #0C2027) with fine film grain, one soft cool light source. Palette: near-black, slate (#A9B2B4), mist white (#F4F9F9), a hint of muted teal and at most ONE small gold (#F5C13A) accent. Large areas of deliberate empty negative space so text can be placed on top later. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, stock-photo people, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image."
+  },
+  "assets": [
+    {
+      "id": "scene",
+      "prompt": "A matte black compact camera body with a brass lens ring lying on a dark slate surface, cool slate light from the upper left, a single small brass accent. Everything sits in the lower half of the frame; the upper 45% is empty ground. Shot straight from above. No printed or written text anywhere.",
+      "size": "1024x1536"
+    }
+  ],
+  "slides": [
+    {
+      "layout": "single",
+      "label": "Photography",
+      "headline": "Real photos\nbeat stock.",
+      "headline_size": 128,
+      "sub": "Show your work, your space, your people. Visitors can tell the difference.",
+      "artwork": {
+        "asset": "scene",
+        "mode": "panel",
+        "focus": "50% 90%"
+      }
+    }
+  ],
+  "caption": "Real photos beat stock.\n\nShow your work, your space, your people. Visitors can tell the difference.\n\nMessage us to begin.\n\n#websitetips #smallbusiness #photography #webdesign #aerelo",
+  "hashtags": "#websitetips #smallbusiness #photography #webdesign #aerelo"
+}

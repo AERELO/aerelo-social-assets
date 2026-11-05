@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "assets": {
+    "scene": {
+      "current": {
+        "file": "assets\\originals\\scene.png",
+        "cache_key": "3ca23233f50ce0791e135de8",
+        "file_sha256": "fce1f54b2e777dbb34147fb0f8afe31bf3255e24214110e0596522bd5f60b203"
+      },
+      "pending": null,
+      "history": [
+        {
+          "status": "completed",
+          "started_at": "2026-11-05T18:56:45+00:00",
+          "finished_at": "2026-11-05T18:57:22+00:00",
+          "model": "gpt-image-2.6-sunburst",
+          "quality": "high",
+          "size": "1024x1536",
+          "complexity": null,
+          "output_format": "png",
+          "prompt": "A matte black compact camera body with a brass lens ring lying on a dark slate surface, cool slate light from the upper left, a single small brass accent. Everything sits in the lower half of the frame; the upper 45% is empty ground. Shot straight from above. No printed or written text anywhere.\n\nVisual style: calm, precise, premium, quiet confidence. A matte deep slate-ink ground (#181C1C to #0C2027) with fine film grain, one soft cool light source. Palette: near-black, slate (#A9B2B4), mist white (#F4F9F9), a hint of muted teal and at most ONE small gold (#F5C13A) accent. Large areas of deliberate empty negative space so text can be placed on top later. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, stock-photo people, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image.",
+          "prompt_sha256": "9528f9c5797771d094353d05598cb2dd1685d1c5a9605cee6c6719836efbee29",
+          "cache_key": "3ca23233f50ce0791e135de8",
+          "request_id": "req_51525e248e89439897d3f82af589370f",
+          "usage": {
+            "input_tokens": 234,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 234
+            },
+            "output_tokens": 1372,
+            "total_tokens": 1606,
+            "output_tokens_details": {
+              "image_tokens": 1372,
+              "text_tokens": 0
+            }
+          },
+          "cost_estimate": {
+            "usd": 0.0423,
+            "basis": "ESTIMATE: reported token usage x list prices in imagegen.PRICING_PER_M; not an invoice"
+          },
+          "file": "assets\\originals\\scene.png",
+          "file_sha256": "fce1f54b2e777dbb34147fb0f8afe31bf3255e24214110e0596522bd5f60b203",
+          "image_size": [
+            1024,
+            1536
+          ],
+          "asset_id": "scene"
+        }
+      ]
+    }
+  }
+}
