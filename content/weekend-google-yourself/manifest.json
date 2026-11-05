@@ -1,0 +1,26 @@
+{
+  "slug": "weekend-google-yourself",
+  "topic": "Weekend task: google your own business",
+  "format": "portrait",
+  "brand": {
+    "name": "AERELO",
+    "theme": "night"
+  },
+  "image_defaults": {
+    "model": "gpt-image-2.6-sunburst",
+    "quality": "high",
+    "size": "1024x1536"
+  },
+  "assets": [],
+  "slides": [
+    {
+      "layout": "single",
+      "label": "Weekend task",
+      "headline": "Google your\nown business.",
+      "headline_size": 128,
+      "sub": "Search your business name. See what a customer sees: your site, your profile, your reviews. Fix one thing."
+    }
+  ],
+  "caption": "Weekend task: google your own business.\n\nSearch your business name. See what a customer sees: your site, your profile, your reviews. Fix one thing.\n\nMessage us to begin.\n\n#weekendtask #localbusiness #smallbusiness #websitetips #aerelo",
+  "hashtags": "#weekendtask #localbusiness #smallbusiness #websitetips #aerelo"
+}
