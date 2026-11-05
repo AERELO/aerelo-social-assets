@@ -177,6 +177,9 @@ def artwork_parts(s: dict, t: dict, art_url: str | None) -> tuple[str, str]:
 def build_slide(s: dict, ctx: dict) -> str:
     """ctx: theme, i, n, n_content, num, W, H, story, logo_url, art_url"""
     t = TH[ctx["theme"]]
+    if ctx.get("style", "orbit") != "orbit":
+        import styles                      # alternative carousel styles (numeral, cards, spec, pano)
+        return styles.build(s, ctx, t)
     W, H, story = ctx["W"], ctx["H"], ctx["story"]
     i, n = ctx["i"], ctx["n"]
     behind, spacer = artwork_parts(s, t, ctx.get("art_url"))
@@ -246,6 +249,7 @@ async (cfg) => {
     const nd = tw.currentNode;
     if (!nd.nodeValue.trim()) continue;
     const el = nd.parentElement, cs = getComputedStyle(el);
+    if (el.tagName === 'STYLE') continue;   // stylesheet text is not copy
     used.add(cs.fontFamily.split(',')[0].replace(/["']/g, '').trim() + '|' + cs.fontWeight);
     const r = document.createRange(); r.selectNodeContents(nd);
     const b = r.getBoundingClientRect();

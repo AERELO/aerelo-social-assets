@@ -1,0 +1,71 @@
+{
+  "slug": "style-sample-pano",
+  "topic": "STYLE SAMPLE (not for posting): what a contact page needs",
+  "style": "pano",
+  "format": "portrait",
+  "brand": {
+    "name": "AERELO",
+    "theme": "night"
+  },
+  "image_defaults": {
+    "model": "gpt-image-2.6-sunburst",
+    "quality": "high",
+    "size": "1024x1536",
+    "prompt_suffix": "Visual style: calm, precise, premium. A long matte near-black desk surface with fine film grain, one soft warm brass-toned light from the left. Palette: near-black, mist white, deep ink-blue, warm brass tones and at most ONE small gold accent. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image."
+  },
+  "assets": [
+    {
+      "id": "wide",
+      "size": "1536x1024",
+      "prompt": "Wide overhead photograph of a long dark matte desk. Across the whole width, evenly spaced from left to right, four small objects: a phone lying face-down, a closed black notebook, a single brass key, and a blank cream card with a small brass paperclip. Everything sits in a single horizontal row in the middle of the frame with generous empty desk above and below. No printed or written text anywhere."
+    }
+  ],
+  "slides": [
+    {
+      "layout": "cover",
+      "label": "Contact page",
+      "headline": "What a contact\npage needs.",
+      "headline_size": 118,
+      "artwork": {
+        "asset": "wide",
+        "mode": "pano",
+        "part": 0,
+        "parts": 2,
+        "focus": "50% 50%"
+      }
+    },
+    {
+      "layout": "content",
+      "title": "Your phone number.",
+      "lead": "Tappable, and visible without scrolling.",
+      "artwork": {
+        "asset": "wide",
+        "mode": "pano",
+        "part": 1,
+        "parts": 2,
+        "focus": "50% 50%"
+      }
+    },
+    {
+      "layout": "content",
+      "title": "A short form.",
+      "lead": "Name and message is enough."
+    },
+    {
+      "layout": "content",
+      "title": "Hours and location.",
+      "lead": "So people know when you are open and where to find you."
+    },
+    {
+      "layout": "content",
+      "title": "A reply promise.",
+      "lead": "Tell them when to expect an answer."
+    },
+    {
+      "layout": "close",
+      "headline": "Does your contact page do this?",
+      "cta": "Message us to begin"
+    }
+  ],
+  "caption": "STYLE SAMPLE. Not for posting."
+}

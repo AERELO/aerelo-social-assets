@@ -31,7 +31,7 @@ Hand this file to any session that makes AERELO social content (images, carousel
 
 ## 6. Carousel structure
 - Cover (topic label, headline, "Swipe" hint), content slides (counter, heading, one supporting line), closing slide (headline, button, footer).
-- The orbit line must connect continuously from slide to slide and never end or drop off inside a slide. Formula used so far: y(x) = 1130 - 420u - 60 sin(pi u), u = x / (N x 1080), gold dot at local x = 900 - 130 i.
+- **One continuity device per carousel** (updated 2026-11-05). Default is the orbit line: it must connect continuously from slide to slide and never end or drop off inside a slide (y(x) = 1130 - 420u - 60 sin(pi u), u = x / (N x 1080), gold dot at local x = 900 - 130 i). Other approved styles (manifest key `style`): `cards`, `spec`, `pano`, `wireframe`, `polaroid`, `zoom`, `editorial`. Pick with `python tools/social/social.py pick-style <kind>`; do not repeat any of the last 3 posts' styles. Style notes are in `brand/carousel-formats.md`.
 - The lead text sits directly under the heading; keep the ring away from all text.
 - Same typography, spacing, colours and layout on every slide.
 

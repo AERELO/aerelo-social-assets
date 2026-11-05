@@ -6,7 +6,7 @@ The company name is **AERELO** (never "AERELO Studios") in all copy, captions an
 - Cadence: 3 posts a day (9am / 1pm / 6pm Jamaica time, UTC-5). Every post is logged in the Notion Content Calendar.
 - Statics are rendered to PNG in this repo and scheduled in Metricool from `raw.githubusercontent.com` URLs. Scheduling or publishing only happens when the user asks for it.
 - Text-only statics can still use `templates/static/carousel_single_generator.py`. Videos use `templates/video/` (run `audit2.py` before rendering any reel). Both are untouched.
-- Rules: no prices on social posts; claims only from `claims.md`; continuous orbit line across carousel slides; Night is the default ground, Paper about one post in three; one gold accent; at most one splash of teal; 84px text margins; 9:16 keeps top 250px and bottom 340px clear.
+- Rules: no prices on social posts; claims only from `claims.md`; one continuity device per carousel (orbit line by default, or another style from `brand/carousel-formats.md`); Night is the default ground, Paper about one post in three; one gold accent; at most one splash of teal; 84px text margins; 9:16 keeps top 250px and bottom 340px clear.
 - Brand source of truth is the Project docs: `aerelo-design-theme.md`, `aerelo-design-system.md`, `aerelo-production-workflow.md`.
 
 ## Social content with generated artwork (OpenAI Images)
@@ -22,7 +22,8 @@ Generation needs to reach `api.openai.com`. The claude.ai cloud workspace blocks
 ### When a request is for a carousel or social graphic
 1. **Discuss and plan.** Objective, audience, format, hook, slide-by-slide exact copy, visual direction. Follow the brand voice and rules above.
 2. **Decide which slides need artwork.** Covers, backgrounds, textures, illustrations and visual concepts only. Never generate text, the logo, slide numbers, CTAs or precise diagrams; those are HTML layouts. Reuse one piece of artwork across slides. Fewer images is better (the budget is 6 per post).
-3. **Write `content/<slug>/manifest.json`** (`social.py new <slug>` scaffolds it). Write each asset prompt with the recipe in `brand/art-direction.md`: one subject, composition with named empty space where text will go, material and light, palette, one gold accent. The shared art-direction text is appended automatically.
+3. **Choose a style:** `python tools/social/social.py pick-style <kind>` (kinds: myth-vs-fact, checklist, before-after, explainer, process, example, statement, build-in-public, stat). Set `"style"` in the manifest; omit for the orbit default. Never repeat a style used in the last 3 posts.
+   **Write `content/<slug>/manifest.json`** (`social.py new <slug>` scaffolds it). Write each asset prompt with the recipe in `brand/art-direction.md`: one subject, composition with named empty space where text will go, material and light, palette, one gold accent. The shared art-direction text is appended automatically.
 4. **Sanity-check:** `social.py dry-run <slug>` (validates, lists planned requests, no API call).
 5. **Generate:** `social.py generate <slug>`. It runs on its own inside the budget, sequentially, and reuses cached assets.
 6. **Review the artwork yourself before using it.** Run `social.py review <slug>`, then open each original at full size and apply the review checklist in `brand/art-direction.md` (palette, one gold accent, empty space where text goes, no text/faces/clutter/generic-AI tropes, crops well, set feels consistent). Reject weak images and fix them with `social.py regen <slug> <asset-id>` (max 2 per asset). If it is still weak, change the concept, not just the wording. Never put an image you would not post into a carousel.

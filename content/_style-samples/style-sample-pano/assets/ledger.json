@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "assets": {
+    "wide": {
+      "current": {
+        "file": "assets\\originals\\wide.png",
+        "cache_key": "a4c6ea33bc0887daee006615",
+        "file_sha256": "1f6732fdc65401b47df27034241a07491446e78f8215d8e750c9cf06c7d4c2be"
+      },
+      "pending": null,
+      "history": [
+        {
+          "status": "completed",
+          "started_at": "2026-11-05T20:04:35+00:00",
+          "finished_at": "2026-11-05T20:05:12+00:00",
+          "model": "gpt-image-2.6-sunburst",
+          "quality": "high",
+          "size": "1536x1024",
+          "complexity": null,
+          "output_format": "png",
+          "prompt": "Wide overhead photograph of a long dark matte desk. Across the whole width, evenly spaced from left to right, four small objects: a phone lying face-down, a closed black notebook, a single brass key, and a blank cream card with a small brass paperclip. Everything sits in a single horizontal row in the middle of the frame with generous empty desk above and below. No printed or written text anywhere.\n\nVisual style: calm, precise, premium. A long matte near-black desk surface with fine film grain, one soft warm brass-toned light from the left. Palette: near-black, mist white, deep ink-blue, warm brass tones and at most ONE small gold accent. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image.",
+          "prompt_sha256": "8838afebc9c4517da930dd60e8c563f658f52c681646972f3ff56bd99a89f0b7",
+          "cache_key": "a4c6ea33bc0887daee006615",
+          "request_id": "req_8a8fb949140b453fb606a1a3881c6b24",
+          "usage": {
+            "input_tokens": 187,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 187
+            },
+            "output_tokens": 1372,
+            "total_tokens": 1559,
+            "output_tokens_details": {
+              "image_tokens": 1372,
+              "text_tokens": 0
+            }
+          },
+          "cost_estimate": {
+            "usd": 0.0421,
+            "basis": "ESTIMATE: reported token usage x list prices in imagegen.PRICING_PER_M; not an invoice"
+          },
+          "file": "assets\\originals\\wide.png",
+          "file_sha256": "1f6732fdc65401b47df27034241a07491446e78f8215d8e750c9cf06c7d4c2be",
+          "image_size": [
+            1536,
+            1024
+          ],
+          "asset_id": "wide"
+        }
+      ]
+    }
+  }
+}

@@ -34,3 +34,20 @@ Today the art direction bans people, screens, UI and anything not abstract. To m
 
 ## Next step
 Pick one format above for the next carousel. I will draft the slide copy, generate a small matched set of scene images (inside your caps), review them, render, and show you the finished carousel.
+
+
+## Carousel styles (approved 2026-11-05)
+Set with the manifest key `"style"`; omit for the default orbit look. Samples: `content/_style-samples/`.
+
+| Style | Look | Use for | Images |
+|---|---|---|---|
+| orbit (default) | Orbit line + gold dot runs across slides | Covers, quiet statements, anything | optional |
+| cards | Tilted paper cards on a ground; give each slide `theme` night/paper alternately | Myth vs fact, Q&A | none |
+| spec | DM Mono spec sheet: ruled rows, gold tick boxes | Checklists, audits | none |
+| pano | One 1536x1024 image across two slides (artwork `mode: pano`, `part`, `parts`) | Before/after, journeys | 1 wide |
+| wireframe | Hairline browser mock; the discussed block is outlined in gold (slide key `wire`: phone, form, hours, note) | Website layout explainers | none |
+| polaroid | Tilted print frame with mono caption (artwork `zoom`, `origin`, `focus` crop one photo) | Examples, before/after photos | 1-2 |
+| zoom | Cover shows the whole scene; later slides crop tighter | One rich scene, detail by detail | 1 |
+| editorial | Big Jost headlines, gold underline on key words (slide key `hl`) | Statements, myths | none |
+
+Dropped: numeral (big numerals). Rule: never use the same style as any of the last 3 posts (`pick-style` checks).

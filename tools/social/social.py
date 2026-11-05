@@ -34,8 +34,8 @@ ID_RE = re.compile(r"^[a-z0-9][a-z0-9_-]*$")
 COPY_FIELDS = ("label", "headline", "sub", "title", "lead", "stat", "caption", "source", "cta", "footer")
 REQUIRED = {"cover": ("headline",), "content": ("title", "lead"), "stat": ("stat", "caption"),
             "close": ("headline",), "single": ("headline",)}
-SLIDE_KEYS = set(COPY_FIELDS) | {"layout", "theme", "artwork", "headline_size", "title_size", "stat_size", "note"}
-ART_KEYS = {"asset", "mode", "focus", "fit", "overlay"}
+SLIDE_KEYS = set(COPY_FIELDS) | {"layout", "theme", "artwork", "headline_size", "title_size", "stat_size", "note", "wire", "hl"}
+ART_KEYS = {"asset", "mode", "focus", "fit", "overlay", "part", "parts", "zoom", "origin"}
 ASSET_KEYS = {"id", "prompt", "prompt_file", "existing", "model", "quality", "size", "complexity", "output", "note"}
 PRICE_RE = re.compile(r"(US\$|J\$|\bJMD\b|\bUSD\b|[$£€]\s?\d|\d\s?(USD|JMD)\b)", re.I)
 
@@ -254,6 +254,8 @@ def validate_manifest(m: dict, post: Path) -> tuple[list[str], list[str]]:
         slides = []
     if len(slides) > 20:
         E.append("slides: Instagram carousels allow at most 20")
+    if m.get("style", "orbit") not in ("orbit", "cards", "spec", "pano", "wireframe", "polaroid", "zoom", "editorial"):
+        E.append('"style" must be one of orbit, cards, spec, pano, wireframe, polaroid, zoom, editorial')
     used: set[str] = set()
     W_, H_, _ = export_size(m) if fmt in lay.FORMATS else (1080, 1350, fmt)
     for n, s in enumerate(slides, 1):
@@ -275,8 +277,8 @@ def validate_manifest(m: dict, post: Path) -> tuple[list[str], list[str]]:
                 E.append(f"slide {n}: artwork.asset '{art.get('asset')}' is not defined in assets")
                 continue
             used.add(art["asset"])
-            if art.get("mode", "full") not in ("full", "panel"):
-                E.append(f"slide {n}: artwork.mode must be full or panel")
+            if art.get("mode", "full") not in ("full", "panel", "pano"):
+                E.append(f"slide {n}: artwork.mode must be full, panel or pano")
             if art.get("fit", "cover") not in ("cover", "contain"):
                 E.append(f"slide {n}: artwork.fit must be cover or contain")
             ov = art.get("overlay", 0.6)
@@ -584,7 +586,7 @@ def cmd_render(a) -> int:
             continue
         theme = s.get("theme", default_theme)
         ctx = {"theme": theme, "i": k, "n": n, "n_content": n_content, "num": f"{counter:02d}", "W": Wd, "H": Hd,
-               "story": story, "logo_url": lay.rel_url(logos[theme], src),
+               "story": story, "style": m.get("style", "orbit"), "logo_url": lay.rel_url(logos[theme], src),
                "art_url": lay.rel_url(art[s["artwork"]["asset"]], src) if s.get("artwork") else None}
         name = f"slide-{k + 1:02d}"
         hf = src / f"{name}.html"
@@ -664,6 +666,21 @@ def cmd_review(a) -> int:
     return 0
 
 
+def cmd_pick_style(a) -> int:
+    import styles as st
+    if a.kind == "list" or not a.kind:
+        for k, v in st.STYLE_GUIDE.items():
+            print(f"  {k:<10}{v}")
+        print("\nkinds: " + ", ".join(st.KIND_FIT))
+        return 0
+    ranked, recent = st.pick_style(a.kind, CONTENT)
+    print(f"recent styles (newest first): {', '.join(recent) or 'none'}")
+    print(f"for '{a.kind}' use, in order: {', '.join(ranked) or 'orbit'}")
+    for k in ranked[:1]:
+        print(f"  -> {k}: {st.STYLE_GUIDE[k]}")
+    return 0
+
+
 STARTER = {
     "slug": "", "topic": "", "format": "portrait",
     "brand": {"name": "AERELO", "theme": "night"},
@@ -703,6 +720,7 @@ def main(argv=None) -> int:
     def post_arg(p):
         p.add_argument("post", help="post slug (content/<slug>) or path to the post folder")
 
+    p = sub.add_parser("pick-style"); p.add_argument("kind", nargs="?", default="list", help="list, or: myth-vs-fact checklist before-after explainer process example statement build-in-public stat"); p.set_defaults(fn=cmd_pick_style)
     p = sub.add_parser("new"); p.add_argument("slug"); p.add_argument("--topic"); p.add_argument("--format", default="portrait", choices=list(lay.FORMATS)); p.set_defaults(fn=cmd_new)
     for name, fn in (("validate", cmd_validate), ("dry-run", cmd_dry_run), ("status", cmd_status)):
         p = sub.add_parser(name); post_arg(p); p.set_defaults(fn=fn)

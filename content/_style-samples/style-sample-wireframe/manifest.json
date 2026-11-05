@@ -1,0 +1,54 @@
+{
+  "slug": "style-sample-wireframe",
+  "topic": "STYLE SAMPLE (not for posting): what a contact page needs",
+  "style": "wireframe",
+  "format": "portrait",
+  "brand": {
+    "name": "AERELO",
+    "theme": "paper"
+  },
+  "image_defaults": {
+    "model": "gpt-image-2.6-sunburst",
+    "quality": "high",
+    "size": "1024x1536"
+  },
+  "assets": [],
+  "slides": [
+    {
+      "layout": "cover",
+      "label": "Contact page",
+      "headline": "What a contact\npage needs.",
+      "headline_size": 118
+    },
+    {
+      "layout": "content",
+      "title": "Your phone number.",
+      "lead": "Tappable, and visible without scrolling.",
+      "wire": "phone"
+    },
+    {
+      "layout": "content",
+      "title": "A short form.",
+      "lead": "Name and message is enough.",
+      "wire": "form"
+    },
+    {
+      "layout": "content",
+      "title": "Hours and location.",
+      "lead": "So people know when you are open and where to find you.",
+      "wire": "hours"
+    },
+    {
+      "layout": "content",
+      "title": "A reply promise.",
+      "lead": "Tell them when to expect an answer.",
+      "wire": "note"
+    },
+    {
+      "layout": "close",
+      "headline": "Does your contact page do this?",
+      "cta": "Message us to begin"
+    }
+  ],
+  "caption": "STYLE SAMPLE. Not for posting."
+}
