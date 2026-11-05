@@ -1,0 +1,27 @@
+{
+  "slug": "your-domain-explained",
+  "topic": "Your domain name is your address",
+  "format": "portrait",
+  "brand": {
+    "name": "AERELO",
+    "theme": "paper"
+  },
+  "image_defaults": {
+    "model": "gpt-image-2.6-sunburst",
+    "quality": "high",
+    "size": "1024x1536",
+    "prompt_suffix": "Visual style: calm, precise, premium, quiet confidence. A matte warm paper ground (#F7F5F0) with fine paper-fibre grain, one soft natural light source and a soft shadow, no gloss. Palette: warm paper, ink (#0C2027), slate, and at most ONE small gold (#F5C13A) accent, with at most a touch of muted teal. Large areas of deliberate empty negative space so text can be placed on top later. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, stock-photo people, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image."
+  },
+  "assets": [],
+  "slides": [
+    {
+      "layout": "single",
+      "label": "Domain",
+      "headline": "Your domain\nis your\naddress.",
+      "headline_size": 118,
+      "sub": "Short, easy to say, easy to spell. It is the first thing people type or remember."
+    }
+  ],
+  "caption": "Your domain is your address.\n\nShort, easy to say, easy to spell. It is the first thing people type or remember.\n\nMessage us to begin.\n\n#domainname #websitebasics #smallbusiness #webdesign #aerelo",
+  "hashtags": "#domainname #websitebasics #smallbusiness #webdesign #aerelo"
+}
