@@ -256,6 +256,10 @@ def validate_manifest(m: dict, post: Path) -> tuple[list[str], list[str]]:
         E.append("slides: Instagram carousels allow at most 20")
     if m.get("style", "orbit") not in ("orbit", "cards", "spec", "pano", "wireframe", "polaroid", "zoom", "editorial"):
         E.append('"style" must be one of orbit, cards, spec, pano, wireframe, polaroid, zoom, editorial')
+    if m.get("style") in ("polaroid", "zoom"):
+        bare = [str(k) for k, sl in enumerate(slides, 1) if sl.get("layout") in ("cover", "content") and not sl.get("artwork")]
+        if bare:
+            W.append(f"style {m['style']} needs a purpose-made photo on every cover/content slide; no artwork on slide(s) {', '.join(bare)}")
     used: set[str] = set()
     W_, H_, _ = export_size(m) if fmt in lay.FORMATS else (1080, 1350, fmt)
     for n, s in enumerate(slides, 1):

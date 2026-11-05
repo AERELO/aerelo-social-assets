@@ -10,7 +10,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 from unittest import mock
 
 HERE = Path(__file__).resolve().parent
@@ -65,7 +65,8 @@ class Setup(unittest.TestCase):
         self.tmp = Path(tempfile.mkdtemp())
         self.addCleanup(shutil.rmtree, self.tmp, True)
         self.budget = {"auto_approve": True, "max_images_per_post": 6, "max_images_per_day": 20, "max_regens_per_asset": 2}
-        for patcher in (mock.patch.object(soc, "SPEND_LOG", self.tmp / "_spend" / "log.jsonl"),
+        for patcher in (mock.patch.object(lay, "LOGO_DIR", self.tmp / "no-logos"),   # tests assume the official logo files are absent
+                        mock.patch.object(soc, "SPEND_LOG", self.tmp / "_spend" / "log.jsonl"),
                         mock.patch.object(soc, "load_budget", lambda: dict(self.budget))):
             patcher.start()
             self.addCleanup(patcher.stop)
@@ -307,8 +308,21 @@ class Setup(unittest.TestCase):
             for i in range(n):
                 self.assertEqual(lay.ring_svg(i, n, t, 1080, 1350), lay.GEN.ringsvg(i, n, t))
         self.assertEqual(lay.topbar(t, "Label", 1, 6), lay.GEN.topbar(t, "Label", 1, 6))
-        lay.GEN.B = Path("/X")
+        lay.GEN.B = PurePosixPath("/X")          # str() is "/X" on every OS (Path would give "\\X" on Windows)
         self.assertEqual(lay.foot(t, "Swipe →", "file:///X/logo/aerelo-mark-small-light.svg"), lay.GEN.foot(t, "Swipe →"))
+
+
+    def test_pick_style_avoids_recent_styles(self):
+        import styles as st
+        for k, style in enumerate(("cards", "spec", "orbit", "editorial")):
+            d = self.tmp / f"p{k}"
+            d.mkdir()
+            (d / "manifest.json").write_text(json.dumps({"style": style}))
+            os.utime(d / "manifest.json", (1000 + k, 1000 + k))
+        self.assertEqual(st.recent_styles(self.tmp), ["editorial", "orbit", "spec"])
+        ranked, _ = st.pick_style("myth-vs-fact", self.tmp)            # fit: cards, editorial; editorial is the latest
+        self.assertEqual(ranked[0], "cards")
+        self.assertNotIn("editorial", ranked)
 
 
 if __name__ == "__main__":
