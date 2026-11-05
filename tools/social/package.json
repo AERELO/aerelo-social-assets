@@ -1,0 +1,10 @@
+{
+  "name": "aerelo-social-tools",
+  "private": true,
+  "description": "Brand fonts for the AERELO social renderer (self-hosted via Fontsource, loaded from node_modules).",
+  "dependencies": {
+    "@fontsource/dm-mono": "^5.0.0",
+    "@fontsource/jost": "^5.0.0",
+    "@fontsource/outfit": "^5.0.0"
+  }
+}

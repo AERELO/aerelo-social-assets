@@ -1,0 +1,6 @@
+{
+  "auto_approve": true,
+  "max_images_per_post": 6,
+  "max_images_per_day": 20,
+  "max_regens_per_asset": 2
+}

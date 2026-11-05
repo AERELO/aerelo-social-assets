@@ -1,0 +1,60 @@
+{
+  "slug": "crm-three-questions",
+  "topic": "What a small business needs from a CRM: three questions it must answer",
+  "format": "portrait",
+  "brand": { "name": "AERELO", "theme": "night" },
+  "image_defaults": { "model": "gpt-image-2.6-sunburst", "quality": "high", "size": "1024x1536" },
+  "assets": [
+    {
+      "id": "hero",
+      "prompt": "Three thin teal orbit lines of different sizes curving across a dark matte stone surface, a tiny gold sphere resting on the innermost line in the lower right. Leave the upper-left 45% of the frame empty. Soft grazing light from the left.",
+      "size": "1024x1536"
+    },
+    {
+      "id": "texture",
+      "prompt": "Extreme close-up of a dark matte surface with a faint teal edge light grazing across it from the right, fine grain, abstract. The left 60% of the frame is calm and empty.",
+      "size": "1024x1536"
+    }
+  ],
+  "slides": [
+    {
+      "layout": "cover",
+      "label": "CRM",
+      "headline": "What a small\nbusiness needs\nfrom a CRM.",
+      "headline_size": 118,
+      "artwork": { "asset": "hero", "mode": "panel", "focus": "75% 82%" }
+    },
+    {
+      "layout": "content",
+      "label": "Question 1",
+      "title": "Who are they?",
+      "lead": "Every enquiry in one place, with where it came from."
+    },
+    {
+      "layout": "content",
+      "label": "Question 2",
+      "title": "What happens next?",
+      "lead": "A follow-up on every lead, so nothing goes quiet.",
+      "artwork": { "asset": "texture", "mode": "full", "overlay": 0.55, "focus": "50% 50%" }
+    },
+    {
+      "layout": "content",
+      "label": "Question 3",
+      "title": "What is it worth?",
+      "lead": "Deals in clear stages, so you can read the pipeline at a glance."
+    },
+    {
+      "layout": "stat",
+      "label": "Principle",
+      "stat": "3",
+      "stat_size": 360,
+      "caption": "Three questions. Answer in seconds."
+    },
+    {
+      "layout": "close",
+      "headline": "We're building a CRM around these three questions.",
+      "cta": "Follow along"
+    }
+  ],
+  "caption": "A CRM should answer three questions fast: who are they, what happens next, and what is it worth.\n\nIf it can't, it's too much. We're building one around exactly that.\n\nFollow along."
+}

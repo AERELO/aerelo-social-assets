@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "assets": {
+    "hero": {
+      "current": {
+        "file": "assets\\originals\\hero.png",
+        "cache_key": "75f0b0fcfda67a85b5612d98",
+        "file_sha256": "c672c06752cad4cde3d12e78cc64426b6cff6ce357e9f45ad986d0340739fafb"
+      },
+      "pending": null,
+      "history": [
+        {
+          "status": "completed",
+          "started_at": "2026-11-05T17:36:59+00:00",
+          "finished_at": "2026-11-05T17:37:39+00:00",
+          "model": "gpt-image-2.6-sunburst",
+          "quality": "high",
+          "size": "1024x1536",
+          "complexity": null,
+          "output_format": "png",
+          "prompt": "Three thin teal orbit lines of different sizes curving across a dark matte stone surface, a tiny gold sphere resting on the innermost line in the lower right. Leave the upper-left 45% of the frame empty. Soft grazing light from the left.\n\nVisual style: calm, precise, premium, quiet confidence. A matte, near-black ground (#121515 to #181C1C) with fine film grain. Light comes from one soft source only. Palette is strictly near-black, mist white (#F4F9F9), muted teal (#08808D), and at most ONE small warm gold (#F5C13A) accent. Large areas of deliberate empty negative space so text can be placed on top later. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, stock-photo people, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image.",
+          "prompt_sha256": "6d68fca3cd0615f4bfb379059ee9d6294e7699abcfba8de8a4ec56a229172691",
+          "cache_key": "75f0b0fcfda67a85b5612d98",
+          "request_id": "req_09649ba1c0734f7bbb69ba3bfcb06ef1",
+          "usage": {
+            "input_tokens": 217,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 217
+            },
+            "output_tokens": 1372,
+            "total_tokens": 1589,
+            "output_tokens_details": {
+              "image_tokens": 1372,
+              "text_tokens": 0
+            }
+          },
+          "cost_estimate": {
+            "usd": 0.0422,
+            "basis": "ESTIMATE: reported token usage x list prices in imagegen.PRICING_PER_M; not an invoice"
+          },
+          "file": "assets\\originals\\hero.png",
+          "file_sha256": "c672c06752cad4cde3d12e78cc64426b6cff6ce357e9f45ad986d0340739fafb",
+          "image_size": [
+            1024,
+            1536
+          ],
+          "asset_id": "hero"
+        }
+      ]
+    },
+    "texture": {
+      "current": {
+        "file": "assets\\originals\\texture.png",
+        "cache_key": "043e2ba2193cd040a2c24bb2",
+        "file_sha256": "780e90e59138dc105da330c6661436a3682a040e68fadfd1a455b1e24cd9d579"
+      },
+      "pending": null,
+      "history": [
+        {
+          "status": "completed",
+          "started_at": "2026-11-05T17:37:39+00:00",
+          "finished_at": "2026-11-05T17:38:13+00:00",
+          "model": "gpt-image-2.6-sunburst",
+          "quality": "high",
+          "size": "1024x1536",
+          "complexity": null,
+          "output_format": "png",
+          "prompt": "Extreme close-up of a dark matte surface with a faint teal edge light grazing across it from the right, fine grain, abstract. The left 60% of the frame is calm and empty.\n\nVisual style: calm, precise, premium, quiet confidence. A matte, near-black ground (#121515 to #181C1C) with fine film grain. Light comes from one soft source only. Palette is strictly near-black, mist white (#F4F9F9), muted teal (#08808D), and at most ONE small warm gold (#F5C13A) accent. Large areas of deliberate empty negative space so text can be placed on top later. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, stock-photo people, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image.",
+          "prompt_sha256": "0511391f2220b90654d0844ed84020660e7d6f0f2c18f983677dc41e29f5b899",
+          "cache_key": "043e2ba2193cd040a2c24bb2",
+          "request_id": "req_0b65deb18e44406ea367cf7725c1a27f",
+          "usage": {
+            "input_tokens": 204,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 204
+            },
+            "output_tokens": 1372,
+            "total_tokens": 1576,
+            "output_tokens_details": {
+              "image_tokens": 1372,
+              "text_tokens": 0
+            }
+          },
+          "cost_estimate": {
+            "usd": 0.0422,
+            "basis": "ESTIMATE: reported token usage x list prices in imagegen.PRICING_PER_M; not an invoice"
+          },
+          "file": "assets\\originals\\texture.png",
+          "file_sha256": "780e90e59138dc105da330c6661436a3682a040e68fadfd1a455b1e24cd9d579",
+          "image_size": [
+            1024,
+            1536
+          ],
+          "asset_id": "texture"
+        }
+      ]
+    }
+  }
+}

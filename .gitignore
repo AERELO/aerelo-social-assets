@@ -1,0 +1,19 @@
+# --- Credentials: NEVER commit. Keep this block first. ---
+.env.images
+.env.images.*
+.env
+.env.*
+!.env.images.example
+!.env.example
+
+# --- Local tooling output ---
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+
+# --- Image pipeline: throwaway placeholders and test runs ---
+content/*/assets/placeholders/
+content/*/source/_placeholder-logo/
+content/_tests/
+content/_spend/
