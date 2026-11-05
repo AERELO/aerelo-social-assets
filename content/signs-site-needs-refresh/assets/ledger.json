@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "assets": {
+    "scene": {
+      "current": {
+        "file": "assets\\originals\\scene.png",
+        "cache_key": "6530c986c1afad264ebad14d",
+        "file_sha256": "38ae4a591a89308cf345901d69b0e17d815ef6c35c82ca303e1ce14745894db0"
+      },
+      "pending": null,
+      "history": [
+        {
+          "status": "completed",
+          "started_at": "2026-11-05T19:30:17+00:00",
+          "finished_at": "2026-11-05T19:30:53+00:00",
+          "model": "gpt-image-2.6-sunburst",
+          "quality": "high",
+          "size": "1024x1536",
+          "complexity": null,
+          "output_format": "png",
+          "prompt": "A worn, scuffed matte black notebook beside a crisp new matte black notebook, side by side on a dark desk, warm brass light from the upper left, one small brass paperclip. Everything sits in the lower half of the frame; the upper 45% is empty ground. Shot straight from above. No printed or written text anywhere.\n\nVisual style: calm, precise, premium, quiet confidence. A matte near-black ground (#121515) with fine film grain, lit by one soft warm brass-toned light source. Palette: near-black, mist white (#F4F9F9), deep ink-blue (#0C2027), warm brass tones and at most ONE small gold (#F5C13A) accent. Large areas of deliberate empty negative space so text can be placed on top later. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, stock-photo people, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image.",
+          "prompt_sha256": "ed628acac60765c22e42711ba85c68e0f0f21059330e4f9cb3ac7d8b4d2a1bae",
+          "cache_key": "6530c986c1afad264ebad14d",
+          "request_id": "req_30c2c0ce5d5b4587a3a5b0976bd85090",
+          "usage": {
+            "input_tokens": 233,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 233
+            },
+            "output_tokens": 1372,
+            "total_tokens": 1605,
+            "output_tokens_details": {
+              "image_tokens": 1372,
+              "text_tokens": 0
+            }
+          },
+          "cost_estimate": {
+            "usd": 0.0423,
+            "basis": "ESTIMATE: reported token usage x list prices in imagegen.PRICING_PER_M; not an invoice"
+          },
+          "file": "assets\\originals\\scene.png",
+          "file_sha256": "38ae4a591a89308cf345901d69b0e17d815ef6c35c82ca303e1ce14745894db0",
+          "image_size": [
+            1024,
+            1536
+          ],
+          "asset_id": "scene"
+        }
+      ]
+    }
+  }
+}

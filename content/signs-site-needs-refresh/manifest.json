@@ -1,0 +1,62 @@
+{
+  "slug": "signs-site-needs-refresh",
+  "topic": "Four signs your website needs a refresh",
+  "format": "portrait",
+  "brand": {
+    "name": "AERELO",
+    "theme": "night"
+  },
+  "image_defaults": {
+    "model": "gpt-image-2.6-sunburst",
+    "quality": "high",
+    "size": "1024x1536",
+    "prompt_suffix": "Visual style: calm, precise, premium, quiet confidence. A matte near-black ground (#121515) with fine film grain, lit by one soft warm brass-toned light source. Palette: near-black, mist white (#F4F9F9), deep ink-blue (#0C2027), warm brass tones and at most ONE small gold (#F5C13A) accent. Large areas of deliberate empty negative space so text can be placed on top later. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, stock-photo people, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image."
+  },
+  "assets": [
+    {
+      "id": "scene",
+      "prompt": "A worn, scuffed matte black notebook beside a crisp new matte black notebook, side by side on a dark desk, warm brass light from the upper left, one small brass paperclip. Everything sits in the lower half of the frame; the upper 45% is empty ground. Shot straight from above. No printed or written text anywhere.",
+      "size": "1024x1536"
+    }
+  ],
+  "slides": [
+    {
+      "layout": "cover",
+      "label": "Website refresh",
+      "headline": "Four signs your\nsite needs a\nrefresh.",
+      "headline_size": 110,
+      "artwork": {
+        "asset": "scene",
+        "mode": "panel",
+        "focus": "50% 90%"
+      }
+    },
+    {
+      "layout": "content",
+      "title": "It looks dated.",
+      "lead": "If you would not send it to a new customer, it is time."
+    },
+    {
+      "layout": "content",
+      "title": "It is hard on a phone.",
+      "lead": "Tiny text, tiny buttons, sideways scrolling."
+    },
+    {
+      "layout": "content",
+      "title": "The info is old.",
+      "lead": "Wrong hours, old offers, staff who left."
+    },
+    {
+      "layout": "content",
+      "title": "It never says what to do.",
+      "lead": "No clear next step means no enquiry."
+    },
+    {
+      "layout": "close",
+      "headline": "How many did you count?",
+      "cta": "Message us to begin"
+    }
+  ],
+  "caption": "Four signs your site needs a refresh.\n\nIt looks dated, it is hard on a phone, the info is old, or it never says what to do.\n\nMessage us to begin.\n\n#websiteredesign #webdesign #websitetips #smallbusiness #aerelo",
+  "hashtags": "#websiteredesign #webdesign #websitetips #smallbusiness #aerelo"
+}
