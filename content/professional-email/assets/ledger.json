@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "assets": {
+    "scene": {
+      "current": {
+        "file": "assets\\originals\\scene.png",
+        "cache_key": "fbc775cd24b6dd03425e6019",
+        "file_sha256": "9ff94a0c7d6469af11847962b7e4edb321a9475956877d800e590ff56f89ecaa"
+      },
+      "pending": null,
+      "history": [
+        {
+          "status": "completed",
+          "started_at": "2026-11-05T18:55:09+00:00",
+          "finished_at": "2026-11-05T18:55:41+00:00",
+          "model": "gpt-image-2.6-sunburst",
+          "quality": "high",
+          "size": "1024x1536",
+          "complexity": null,
+          "output_format": "png",
+          "prompt": "A single plain cream envelope with a small brass paperclip on it, resting on a warm paper-textured surface with a soft natural shadow, light from the upper left. Everything sits in the lower half of the frame; the upper 45% is empty ground. Shot straight from above. No printed or written text anywhere.\n\nVisual style: calm, precise, premium, quiet confidence. A matte warm paper ground (#F7F5F0) with fine paper-fibre grain, one soft natural light source and a soft shadow, no gloss. Palette: warm paper, ink (#0C2027), slate, and at most ONE small gold (#F5C13A) accent, with at most a touch of muted teal. Large areas of deliberate empty negative space so text can be placed on top later. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, stock-photo people, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image.",
+          "prompt_sha256": "228624cc52fd5a64724621eb68fd24c7784a865f21393d53a9f26037cee42517",
+          "cache_key": "fbc775cd24b6dd03425e6019",
+          "request_id": "req_29a2789b92944f52bd018ef20644da4f",
+          "usage": {
+            "input_tokens": 233,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 233
+            },
+            "output_tokens": 1372,
+            "total_tokens": 1605,
+            "output_tokens_details": {
+              "image_tokens": 1372,
+              "text_tokens": 0
+            }
+          },
+          "cost_estimate": {
+            "usd": 0.0423,
+            "basis": "ESTIMATE: reported token usage x list prices in imagegen.PRICING_PER_M; not an invoice"
+          },
+          "file": "assets\\originals\\scene.png",
+          "file_sha256": "9ff94a0c7d6469af11847962b7e4edb321a9475956877d800e590ff56f89ecaa",
+          "image_size": [
+            1024,
+            1536
+          ],
+          "asset_id": "scene"
+        }
+      ]
+    }
+  }
+}

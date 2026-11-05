@@ -1,0 +1,38 @@
+{
+  "slug": "professional-email",
+  "topic": "A professional email address builds trust",
+  "format": "portrait",
+  "brand": {
+    "name": "AERELO",
+    "theme": "paper"
+  },
+  "image_defaults": {
+    "model": "gpt-image-2.6-sunburst",
+    "quality": "high",
+    "size": "1024x1536",
+    "prompt_suffix": "Visual style: calm, precise, premium, quiet confidence. A matte warm paper ground (#F7F5F0) with fine paper-fibre grain, one soft natural light source and a soft shadow, no gloss. Palette: warm paper, ink (#0C2027), slate, and at most ONE small gold (#F5C13A) accent, with at most a touch of muted teal. Large areas of deliberate empty negative space so text can be placed on top later. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, stock-photo people, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image."
+  },
+  "assets": [
+    {
+      "id": "scene",
+      "prompt": "A single plain cream envelope with a small brass paperclip on it, resting on a warm paper-textured surface with a soft natural shadow, light from the upper left. Everything sits in the lower half of the frame; the upper 45% is empty ground. Shot straight from above. No printed or written text anywhere.",
+      "size": "1024x1536"
+    }
+  ],
+  "slides": [
+    {
+      "layout": "single",
+      "label": "Trust",
+      "headline": "Your email is\npart of your\nbrand.",
+      "headline_size": 118,
+      "sub": "name@yourbusiness looks established. A freemail address can look temporary.",
+      "artwork": {
+        "asset": "scene",
+        "mode": "panel",
+        "focus": "50% 70%"
+      }
+    }
+  ],
+  "caption": "Your email is part of your brand.\n\nname@yourbusiness looks established. A freemail address can look temporary.\n\nMessage us to begin.\n\n#smallbusiness #businessemail #branding #professionalbranding #aerelo",
+  "hashtags": "#smallbusiness #businessemail #branding #professionalbranding #aerelo"
+}
