@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "assets": {
+    "before": {
+      "current": {
+        "file": "assets\\originals\\before.png",
+        "cache_key": "6aed22912e3c62926fb2a20f",
+        "file_sha256": "22b5e35b3176de108b49d8afdd76382142ebd68f615f8cf11a3eb1d7d93b0660"
+      },
+      "pending": null,
+      "history": [
+        {
+          "status": "unknown",
+          "at": "2026-11-05T18:32:23+00:00",
+          "asset_id": "before",
+          "error": "Could not reach the API (network). The request may or may not have been received; not retried."
+        },
+        {
+          "status": "completed",
+          "started_at": "2026-11-05T18:35:30+00:00",
+          "finished_at": "2026-11-05T18:36:12+00:00",
+          "model": "gpt-image-2.6-sunburst",
+          "quality": "high",
+          "size": "1024x1536",
+          "complexity": null,
+          "output_format": "png",
+          "prompt": "Directly overhead photograph of a dark matte desk surface with a small chaotic scatter of blank crumpled paper notes, a blank torn receipt, loose blank sticky notes and a pen lying at an angle, a phone lying face-down, all in the lower half of the frame. One small brass paperclip is the only warm accent. No writing on any paper. The upper 45% of the frame is empty dark desk. Soft single light from the upper left, fine grain.\n\nVisual style: calm, precise, premium, quiet confidence. A matte, near-black ground (#121515 to #181C1C) with fine film grain. Light comes from one soft source only. Palette is strictly near-black, mist white (#F4F9F9), muted teal (#08808D), and at most ONE small warm gold (#F5C13A) accent. Large areas of deliberate empty negative space so text can be placed on top later. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, stock-photo people, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image.",
+          "prompt_sha256": "02771b2cd59862f4434c9b85623a66e0ad17a0b995dc61a54e139189b4cf025d",
+          "cache_key": "6aed22912e3c62926fb2a20f",
+          "request_id": "req_943dd8da222b420998da5f08a07e6267",
+          "usage": {
+            "input_tokens": 261,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 261
+            },
+            "output_tokens": 1372,
+            "total_tokens": 1633,
+            "output_tokens_details": {
+              "image_tokens": 1372,
+              "text_tokens": 0
+            }
+          },
+          "cost_estimate": {
+            "usd": 0.0425,
+            "basis": "ESTIMATE: reported token usage x list prices in imagegen.PRICING_PER_M; not an invoice"
+          },
+          "file": "assets\\originals\\before.png",
+          "file_sha256": "22b5e35b3176de108b49d8afdd76382142ebd68f615f8cf11a3eb1d7d93b0660",
+          "image_size": [
+            1024,
+            1536
+          ],
+          "asset_id": "before"
+        }
+      ]
+    },
+    "after": {
+      "current": {
+        "file": "assets\\originals\\after.png",
+        "cache_key": "0a4c47c8d33c757c140e5c4b",
+        "file_sha256": "910af5cd81c45142c83d803ebe4c3e3f37b95ee37cce13b083e3886b99d09c6f"
+      },
+      "pending": null,
+      "history": [
+        {
+          "status": "completed",
+          "started_at": "2026-11-05T18:34:32+00:00",
+          "finished_at": "2026-11-05T18:35:29+00:00",
+          "model": "gpt-image-2.6-sunburst",
+          "quality": "high",
+          "size": "1024x1536",
+          "complexity": null,
+          "output_format": "png",
+          "prompt": "Directly overhead photograph of the same dark matte desk surface, same camera angle and same soft light from the upper left. A slim matte black tray holds a neat row of five upright blank cream index cards in the lower half of the frame, a pen lying perfectly straight beside it. One small brass paperclip on the first card is the only warm accent. No writing on any card. The upper 45% of the frame is empty dark desk, fine grain.\n\nVisual style: calm, precise, premium, quiet confidence. A matte, near-black ground (#121515 to #181C1C) with fine film grain. Light comes from one soft source only. Palette is strictly near-black, mist white (#F4F9F9), muted teal (#08808D), and at most ONE small warm gold (#F5C13A) accent. Large areas of deliberate empty negative space so text can be placed on top later. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, stock-photo people, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image.",
+          "prompt_sha256": "eb5ec69702f55cb2fd0d640e131d24b1b5a0bdc12d914ddc56c0bc9a63d84944",
+          "cache_key": "0a4c47c8d33c757c140e5c4b",
+          "request_id": "req_aa75e3cfa1594de0bc073af51e8e21f7",
+          "usage": {
+            "input_tokens": 258,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 258
+            },
+            "output_tokens": 1372,
+            "total_tokens": 1630,
+            "output_tokens_details": {
+              "image_tokens": 1372,
+              "text_tokens": 0
+            }
+          },
+          "cost_estimate": {
+            "usd": 0.0425,
+            "basis": "ESTIMATE: reported token usage x list prices in imagegen.PRICING_PER_M; not an invoice"
+          },
+          "file": "assets\\originals\\after.png",
+          "file_sha256": "910af5cd81c45142c83d803ebe4c3e3f37b95ee37cce13b083e3886b99d09c6f",
+          "image_size": [
+            1024,
+            1536
+          ],
+          "asset_id": "after"
+        }
+      ]
+    }
+  }
+}

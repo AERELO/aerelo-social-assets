@@ -1,0 +1,50 @@
+{
+  "slug": "enquiries-before-after",
+  "topic": "Before and after: enquiries scattered everywhere vs. in one place",
+  "format": "portrait",
+  "brand": { "name": "AERELO", "theme": "night" },
+  "image_defaults": { "model": "gpt-image-2.6-sunburst", "quality": "high", "size": "1024x1536" },
+  "assets": [
+    {
+      "id": "before",
+      "prompt": "Directly overhead photograph of a dark matte desk surface with a small chaotic scatter of blank crumpled paper notes, a blank torn receipt, loose blank sticky notes and a pen lying at an angle, a phone lying face-down, all in the lower half of the frame. One small brass paperclip is the only warm accent. No writing on any paper. The upper 45% of the frame is empty dark desk. Soft single light from the upper left, fine grain.",
+      "size": "1024x1536"
+    },
+    {
+      "id": "after",
+      "prompt": "Directly overhead photograph of the same dark matte desk surface, same camera angle and same soft light from the upper left. A slim matte black tray holds a neat row of five upright blank cream index cards in the lower half of the frame, a pen lying perfectly straight beside it. One small brass paperclip on the first card is the only warm accent. No writing on any card. The upper 45% of the frame is empty dark desk, fine grain.",
+      "size": "1024x1536"
+    }
+  ],
+  "slides": [
+    {
+      "layout": "cover",
+      "label": "Enquiries",
+      "headline": "Where do your\nenquiries live?",
+      "headline_size": 124
+    },
+    {
+      "layout": "content",
+      "title": "Before",
+      "lead": "Notes, texts and half-remembered calls. Leads go quiet because nobody knows who is next.",
+      "artwork": { "asset": "before", "mode": "panel", "focus": "50% 90%" }
+    },
+    {
+      "layout": "content",
+      "title": "After",
+      "lead": "Every enquiry on one card: who they are, where they came from, what happens next.",
+      "artwork": { "asset": "after", "mode": "panel", "focus": "50% 90%" }
+    },
+    {
+      "layout": "content",
+      "title": "What changed",
+      "lead": "One place to look. A next step on every lead. Nothing falls through."
+    },
+    {
+      "layout": "close",
+      "headline": "Which one is your business today?",
+      "cta": "Message us to begin"
+    }
+  ],
+  "caption": "Before: notes, texts and half-remembered calls.\nAfter: every enquiry in one place, with a next step.\n\nWhich one is your business today?\n\nMessage us to begin."
+}
