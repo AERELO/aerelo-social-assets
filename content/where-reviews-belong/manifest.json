@@ -1,0 +1,62 @@
+{
+  "slug": "where-reviews-belong",
+  "topic": "Where reviews and testimonials go on your site",
+  "format": "portrait",
+  "brand": {
+    "name": "AERELO",
+    "theme": "night"
+  },
+  "image_defaults": {
+    "model": "gpt-image-2.6-sunburst",
+    "quality": "high",
+    "size": "1024x1536",
+    "prompt_suffix": "Visual style: calm, precise, premium, quiet confidence. A matte deep slate-ink ground (#181C1C to #0C2027) with fine film grain, one soft cool light source. Palette: near-black, slate (#A9B2B4), mist white (#F4F9F9), a hint of muted teal and at most ONE small gold (#F5C13A) accent. Large areas of deliberate empty negative space so text can be placed on top later. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, stock-photo people, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image."
+  },
+  "assets": [
+    {
+      "id": "scene",
+      "prompt": "An open blank matte notebook with empty pages and a slim pen lying across it on a dark slate surface, cool light from the upper left, one small brass paperclip. Everything sits in the lower half of the frame; the upper 45% is empty ground. Shot straight from above. No printed or written text anywhere.",
+      "size": "1024x1536"
+    }
+  ],
+  "slides": [
+    {
+      "layout": "cover",
+      "label": "Social proof",
+      "headline": "Where reviews\nbelong.",
+      "headline_size": 118,
+      "artwork": {
+        "asset": "scene",
+        "mode": "panel",
+        "focus": "50% 90%"
+      }
+    },
+    {
+      "layout": "content",
+      "title": "Near the headline.",
+      "lead": "A line from a real customer, right where people start reading."
+    },
+    {
+      "layout": "content",
+      "title": "Next to the button.",
+      "lead": "Trust matters most at the moment someone decides to act."
+    },
+    {
+      "layout": "content",
+      "title": "On your service pages.",
+      "lead": "Match the review to what that page sells."
+    },
+    {
+      "layout": "content",
+      "title": "With a name.",
+      "lead": "Real name, real business, and always with permission."
+    },
+    {
+      "layout": "close",
+      "headline": "Where would yours go?",
+      "cta": "Message us to begin"
+    }
+  ],
+  "caption": "Where reviews belong.\n\nNear the headline, next to the button, on your service pages, and always with a real name and permission.\n\nMessage us to begin.\n\n#testimonials #socialproof #websitetips #smallbusiness #aerelo",
+  "hashtags": "#testimonials #socialproof #websitetips #smallbusiness #aerelo"
+}

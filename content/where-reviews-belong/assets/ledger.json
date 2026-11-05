@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "assets": {
+    "scene": {
+      "current": {
+        "file": "assets\\originals\\scene.png",
+        "cache_key": "18ad58e8ed42f32e45e05613",
+        "file_sha256": "9813ce19c67697693c6f85772a2ca42e016c14956377d1dc852eed873565f36b"
+      },
+      "pending": null,
+      "history": [
+        {
+          "status": "completed",
+          "started_at": "2026-11-05T19:27:42+00:00",
+          "finished_at": "2026-11-05T19:28:21+00:00",
+          "model": "gpt-image-2.6-sunburst",
+          "quality": "high",
+          "size": "1024x1536",
+          "complexity": null,
+          "output_format": "png",
+          "prompt": "An open blank matte notebook with empty pages and a slim pen lying across it on a dark slate surface, cool light from the upper left, one small brass paperclip. Everything sits in the lower half of the frame; the upper 45% is empty ground. Shot straight from above. No printed or written text anywhere.\n\nVisual style: calm, precise, premium, quiet confidence. A matte deep slate-ink ground (#181C1C to #0C2027) with fine film grain, one soft cool light source. Palette: near-black, slate (#A9B2B4), mist white (#F4F9F9), a hint of muted teal and at most ONE small gold (#F5C13A) accent. Large areas of deliberate empty negative space so text can be placed on top later. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, stock-photo people, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image.",
+          "prompt_sha256": "b9c93a2d328977cb91964cc0265f0e474631c73593c2977a56e2f71979a44640",
+          "cache_key": "18ad58e8ed42f32e45e05613",
+          "request_id": "req_95d887cbcc9e421aba896e1e9c5726ab",
+          "usage": {
+            "input_tokens": 236,
+            "input_tokens_details": {
+              "image_tokens": 0,
+              "text_tokens": 236
+            },
+            "output_tokens": 1372,
+            "total_tokens": 1608,
+            "output_tokens_details": {
+              "image_tokens": 1372,
+              "text_tokens": 0
+            }
+          },
+          "cost_estimate": {
+            "usd": 0.0423,
+            "basis": "ESTIMATE: reported token usage x list prices in imagegen.PRICING_PER_M; not an invoice"
+          },
+          "file": "assets\\originals\\scene.png",
+          "file_sha256": "9813ce19c67697693c6f85772a2ca42e016c14956377d1dc852eed873565f36b",
+          "image_size": [
+            1024,
+            1536
+          ],
+          "asset_id": "scene"
+        }
+      ]
+    }
+  }
+}
