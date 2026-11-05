@@ -1,7 +1,7 @@
 # AERELO art direction for generated artwork
 
 Generated images are **backgrounds, panels, textures and quiet visual concepts**. Headlines, body copy, CTAs, slide numbers,
-diagrams and the logo are always real layouts, never baked into an image. The look must read as AERELO at a glance and must not
+diagrams, arrows, crossed-out text and the logo are always real layouts, never baked into an image. The look must read as AERELO at a glance and must not
 read as "AI art".
 
 ## The look
@@ -12,11 +12,14 @@ read as "AI art".
 - **Brand motifs (use sparingly, one per image):** a thin tilted orbit line, a needle through an open halo, a small gold sphere on an orbit.
   The real logo is never drawn or generated; it is placed from `brand/logo/`.
 - **Space:** at least 40% deliberate empty space, placed where the text will sit. Say which side in the prompt.
-- **Realism:** abstract materials, light and surfaces (matte stone, brushed metal edge, frosted glass, paper fibre, fine grain). No people, faces, hands, screens or UI.
+- **Realism:** two modes.
+  - *Abstract* (covers, backgrounds): materials, light and surfaces (matte stone, brushed metal edge, frosted glass, paper fibre, fine grain).
+  - *Example / explainer scenes* (approved 2026-11-05): editorial still life of real objects that stand for the idea (notebook, index cards, a tray of cards, a phone face-down, keys, desk lamp, plant, a shop counter). Photographic, matte, one soft light, a MATCHED SET per post (same surface, light and camera angle, so before/after and process slides feel like one shoot). Same palette and one gold accent. See `brand/carousel-formats.md`.
+  - Either mode: no faces, hands, screens or UI, and no text or numbers in the image.
 
 ## Never
 Neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, generic "digital transformation" imagery, stock-photo
-people, charts or fake interfaces, gradients used as decoration, and any text, letters, numbers, logos or watermarks in the picture.
+people, faces and hands, charts or fake interfaces, gradients used as decoration, and any text, letters, numbers, logos or watermarks in the picture.
 
 ## Prompt recipe (what Claude writes for each asset)
 1. **One subject, one idea.** What is in the frame and why it fits this slide's message (a single sentence).
