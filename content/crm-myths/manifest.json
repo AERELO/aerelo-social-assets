@@ -1,0 +1,62 @@
+{
+  "slug": "crm-myths",
+  "topic": "CRM myths: spreadsheet is enough; CRMs are for big firms",
+  "format": "portrait",
+  "brand": {
+    "name": "AERELO",
+    "theme": "night"
+  },
+  "image_defaults": {
+    "model": "gpt-image-2.6-sunburst",
+    "quality": "high",
+    "size": "1024x1536",
+    "prompt_suffix": "Visual style: calm, precise, premium, quiet confidence. A matte near-black ground (#121515) with fine film grain, lit by one soft warm brass-toned light source. Palette: near-black, mist white (#F4F9F9), deep ink-blue (#0C2027), warm brass tones and at most ONE small gold (#F5C13A) accent. Large areas of deliberate empty negative space so text can be placed on top later. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, stock-photo people, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image."
+  },
+  "assets": [
+    {
+      "id": "scene",
+      "prompt": "A closed matte black ledger notebook with a plain cover and a brass pen lying beside it on a dark desk, one small brass paperclip on the cover, warm brass light from the upper left. Everything sits in the lower half of the frame; the upper 45% is empty ground. Shot straight from above. No printed or written text anywhere.",
+      "size": "1024x1536"
+    }
+  ],
+  "slides": [
+    {
+      "layout": "cover",
+      "label": "CRM myths",
+      "headline": "Two CRM\nmyths, busted.",
+      "headline_size": 118,
+      "artwork": {
+        "asset": "scene",
+        "mode": "panel",
+        "focus": "50% 90%"
+      }
+    },
+    {
+      "layout": "content",
+      "title": "Myth: a spreadsheet is enough.",
+      "lead": "It looks tidy at ten leads. At fifty, nobody knows who is next."
+    },
+    {
+      "layout": "content",
+      "title": "Fact: you need a next step.",
+      "lead": "A CRM shows who to contact next. A sheet only stores names."
+    },
+    {
+      "layout": "content",
+      "title": "Myth: CRMs are for big firms.",
+      "lead": "Small teams lose the most when a lead goes quiet."
+    },
+    {
+      "layout": "content",
+      "title": "Fact: simple is the point.",
+      "lead": "Start with who they are, what happens next and what it is worth."
+    },
+    {
+      "layout": "close",
+      "headline": "Which myth did you believe?",
+      "cta": "Follow along"
+    }
+  ],
+  "caption": "Two CRM myths, busted.\n\nA spreadsheet stores names. A CRM shows who to contact next. And small teams lose the most when a lead goes quiet.\n\nWe're building a simple one. Follow along.\n\n#crm #smallbusiness #customerrelationships #businesstips #aerelo",
+  "hashtags": "#crm #smallbusiness #customerrelationships #businesstips #aerelo"
+}
