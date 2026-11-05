@@ -1,0 +1,93 @@
+{
+  "slug": "seo-in-plain-words",
+  "topic": "Explainer: SEO in plain words",
+  "style": "zoom",
+  "format": "portrait",
+  "brand": {
+    "name": "AERELO",
+    "theme": "night"
+  },
+  "image_defaults": {
+    "model": "gpt-image-2.6-sunburst",
+    "quality": "high",
+    "size": "1024x1536",
+    "prompt_suffix": "Visual style: calm, precise, premium, quiet confidence. A matte near-black ground (#121515) with fine film grain, lit by one soft warm brass-toned light source. Palette: near-black, mist white (#F4F9F9), deep ink-blue (#0C2027), warm brass tones and at most ONE small gold (#F5C13A) accent. Large areas of deliberate empty negative space so text can be placed on top later. Flat, restrained, editorial. Avoid: neon, lens flare, glossy 3D blobs, cyber grids, circuit boards, rockets, light bulbs, handshakes, stock-photo people, faces, hands, fake UI, charts, and any text, letters, numbers, logos or watermarks in the image."
+  },
+  "assets": [
+    {
+      "id": "scene",
+      "size": "1024x1536",
+      "prompt": "Overhead photograph of a dark matte desk. In the middle third of the frame, a neat grid of nine blank dark-grey cards in three rows; the centre card is cream and lit by a soft warm spotlight with a small brass paperclip on it, while the other eight sit dim in shadow. Empty dark desk above and below the grid. Shot straight from above. No printed or written text anywhere."
+    }
+  ],
+  "slides": [
+    {
+      "layout": "cover",
+      "label": "SEO",
+      "headline": "SEO in\nplain words.",
+      "headline_size": 118,
+      "artwork": {
+        "asset": "scene",
+        "mode": "panel",
+        "focus": "50% 50%",
+        "zoom": 1.0,
+        "origin": "50% 50%"
+      }
+    },
+    {
+      "layout": "content",
+      "title": "Your page title.",
+      "lead": "The line shown in search results. Say what you do and where.",
+      "artwork": {
+        "asset": "scene",
+        "mode": "panel",
+        "focus": "50% 50%",
+        "zoom": 2.3,
+        "origin": "50% 50%"
+      }
+    },
+    {
+      "layout": "content",
+      "title": "Your headings.",
+      "lead": "Short headings help people and search engines see what a page covers.",
+      "artwork": {
+        "asset": "scene",
+        "mode": "panel",
+        "focus": "50% 50%",
+        "zoom": 2.3,
+        "origin": "18% 45%"
+      }
+    },
+    {
+      "layout": "content",
+      "title": "Your words.",
+      "lead": "Write what customers actually say and type, not internal jargon.",
+      "artwork": {
+        "asset": "scene",
+        "mode": "panel",
+        "focus": "50% 50%",
+        "zoom": 2.3,
+        "origin": "82% 55%"
+      }
+    },
+    {
+      "layout": "content",
+      "title": "Works on phones.",
+      "lead": "If it is slow or awkward on a phone, people leave.",
+      "artwork": {
+        "asset": "scene",
+        "mode": "panel",
+        "focus": "50% 50%",
+        "zoom": 2.3,
+        "origin": "50% 85%"
+      }
+    },
+    {
+      "layout": "close",
+      "headline": "Which one is missing?",
+      "cta": "Message us to begin"
+    }
+  ],
+  "caption": "SEO in plain words.\n\nFour things a page can get right: a clear title, short headings, the words customers use, and a site that works on phones.\n\nMessage us to begin.\n\n#seo #seobasics #websitetips #smallbusiness #aerelo",
+  "hashtags": "#seo #seobasics #websitetips #smallbusiness #aerelo"
+}
